@@ -1,30 +1,31 @@
 <?php
 
-echo '<h1>Bem- vindo ao Senai';
+$usuario_autenticado = false;
+
+//cria uma variavel que armasena os valores dos email e senhas
+$usuario_cadastrado = [
+    ['email'=> 'adimin@gmail.com',
+    'senha'=> 12345]
+];
+// cria uma foreach que aprevia a variavel $usuario_cadastrado para $user
+foreach($usuario_cadastrado as $user){
+    //ve se a informação do $_POST é igual a um dos email ou senha cadastrados
+    if($user['email'] == $_POST['email'] && $user['senha'] == $_POST['senha']){
+        $usuario_autenticado = true;
+    }
+        
+
+
+}
+//se usuario = a verdadeiro irá validae
+if($usuario_autenticado == true){
+    echo "Usuário altenticado com sucesso";
+}
+else{
+    //echo 'Usuário ou senha incorreto';
+    header ('location: index.php?login=erro');
+}
+    
 
 
 ?>
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-
-
-<?php 
-echo '<pre>';
-print_r($_POST);
-echo '</pre> <hr>';
- 
-echo"E-mail; " ;
-echo $_POST['email'];
-echo '<br>';
-echo"Senha: ";
-echo $_POST['senha'];
-
-?>
-</body>
-</html>
