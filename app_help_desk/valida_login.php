@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 $usuario_autenticado = false;
 
@@ -23,10 +24,13 @@ foreach($usuario_cadastrado as $user){
 }
 //se usuario = a verdadeiro irá validae
 if($usuario_autenticado == true){
+    //SESSION validando o usuario esta logado para ir para a prosima sessão
+    $_SESSION['autenticado'] ='SIM';
     //echo "Usuário altenticado com sucesso";
     header ('location: painel.php');
 }
 else{
+    $_SESSION['autenticado'] ='NÂO';
     //echo 'Usuário ou senha incorreto';
     header ('location: index.php?login=erro');
 }
