@@ -1,11 +1,7 @@
 <?php
-session_start();
-echo $_SESSION['autenticado'];
-if(!  isset($_SESSION['autenticado']) || $_SESSION
-['autenticado'] != 'SIM'){
-  header ('Location: index.php?login+erro2');
-}
+require_once ("login.php");
 ?>
+
 
 <html>
   <head>
@@ -26,6 +22,7 @@ if(!  isset($_SESSION['autenticado']) || $_SESSION
         <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         App Help Desk
       </a>
+      <b><center><button onlick= "location.href='logoof.php'" class="botao-sair">Sair</button></center></b>
     </nav>
 
     <div class="container">    
