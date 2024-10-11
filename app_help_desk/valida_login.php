@@ -5,7 +5,7 @@ $usuario_autenticado = false;
 
 //cria uma variavel que armasena os valores dos email e senhas
 $usuario_cadastrado = [
-    ['email'=> 'adimin@senai.br',
+    ['email'=> 'admin@senai.br',
     'senha'=> 12345],
     ['email'=> 'aluno@senai.br',
     'senha'=> 'abcde'],

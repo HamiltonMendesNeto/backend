@@ -10,6 +10,8 @@ require_once ("login.php");
 
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="estilizacao.css">
+
 
     </style>
   </head>
@@ -21,7 +23,8 @@ require_once ("login.php");
         <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         App Help Desk
       </a>
-      <b><center><button onlick= "location.href='logoof.php'" class="botao-sair">Sair</button></center></b>
+      <button onclick="location.href='logoff.php'" class="botao-sair" type="button">Sair</button>
+</nav>
 
     <div class="container">    
       <div class="row">

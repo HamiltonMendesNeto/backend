@@ -12,6 +12,8 @@ require_once ("login.php");
     
     <link rel="stylesheet" type="text/css" href="styles.css">
 
+    <link rel="stylesheet" type="text/css" href="estilizacao.css">
+
     </style>
   </head>
 
@@ -22,7 +24,8 @@ require_once ("login.php");
         <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         App Help Desk
       </a>
-      <b><center><button onlick= "location.href='logoof.php'" class="botao-sair">Sair</button></center></b>
+      <button onclick="location.href='logoff.php'" class="botao-sair" type="button">Sair</button>
+
     </nav>
 
     <div class="container">    
@@ -56,7 +59,8 @@ require_once ("login.php");
 
               <div class="row mt-5">
                 <div class="col-6">
-                  <button class="btn btn-lg btn-warning btn-block" type="submit">Voltar</button>
+                  <a class="btn btn-lg btn-warning btn-block" href="painel.php">Voltar</a>
+            
                 </div>
               </div>
             </div>

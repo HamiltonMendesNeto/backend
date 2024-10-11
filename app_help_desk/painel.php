@@ -10,6 +10,8 @@ require_once ("login.php");
     <link rel="stylesheet" type="text/css" href="bootstrap.css">
     
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="estilizacao.css">
+
     
     </style>
   </head>
@@ -23,7 +25,7 @@ require_once ("login.php");
         <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         App Help Desk
       </a>
-      <b><center><button onlick= "location.href='logoof.php'" class="botao-sair">Sair</button></center></b>
+      <button onclick="location.href='logoff.php'" class="botao-sair" type="button">Sair</button>
 
     </nav>
 
@@ -39,12 +41,12 @@ require_once ("login.php");
               <div class="row">
                 <div class="col-6 d-flex justify-content-center">
                   <a href="abrir_chamado.php">
-                  <img src="formulario_abrir_chamado.png" width="70" height="70">
+                  <img src="formulario_abrir_chamado.png" width="80" height="80">
                 </a>
                 </div>
                 <div class="col-6 d-flex justify-content-center">
                   <a href="consultar_chamado.php">
-                  <img src="formulario_consultar_chamado.png" width="70" height="70">
+                  <img src="formulario_consultar_chamado.png" width="100" height="100">
                 </a>
                 </div>
               </div>

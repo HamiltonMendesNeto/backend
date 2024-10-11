@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(69, 0, 83);
+    
+}
+.card{
+    background-color: rgba(165, 2, 197, 0.767);
+    color: aliceblue;
+}
+.btn{
+    background-color: rgba(193, 0, 231, 0.767); 
+    border-color: blueviolet;
+    
+}
